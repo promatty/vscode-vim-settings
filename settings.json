@@ -1,0 +1,124 @@
+{
+	"terminal.integrated.defaultProfile.osx": "bash",
+	"[python]": {
+		"editor.formatOnType": true,
+		"editor.defaultFormatter": "mikoz.black-py"
+	},
+	"code-runner.runInTerminal": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"git.autofetch": true,
+	"githubPullRequests.pullBranch": "never",
+	"prettier.useTabs": true,
+	"git.confirmSync": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "diffEditor.ignoreTrimWhitespace": false,
+	"git.enableSmartCommit": true,
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"vim.leader": "<space>",
+	"vim.surround": true,
+	"vim.camelCaseMotion.enable": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["<C-h>"], // navigate between buffers
+			"commands": ["workbench.action.navigateLeft"],
+			"silent": true
+		},
+		{
+			"before": ["<C-k>"], // navigate between buffers
+			"commands": ["workbench.action.navigateRight"],
+			"silent": true
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		// {
+		//   "before": ["<C-y>"],
+		//   "after": ["z", "c", "g", "j", "j"],
+		//   "silent": false
+		// },
+		// {
+		//   "before": ["<C-o>"],
+		//   "after": ["z", "o", "g", "k", "k"],
+		//   "silent": false
+		// },
+		{
+			"before": ["<C-w>"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<Leader>", "h"], // highlight off
+			"commands": [":nohl"]
+		},
+		{
+			"before": ["<leader>", "/"], // comment line
+			"after": ["g", "c", "c"]
+		},
+		{
+			"before": ["<leader>", "l", "f"], // format document
+			"commands": ["editor.action.formatDocument"]
+		},
+		{
+			"before": ["g", "l"], // hover error
+			"commands": ["editor.action.showHover"],
+			"silent": true
+		},
+		{
+			"before": ["<C-h>"], // navigate between buffers
+			"commands": ["workbench.action.navigateLeft"],
+			"when": "explorerViewletVisible && filesExplorerFocus",
+			"silent": true
+		},
+		{
+			"before": ["<C-l>"], // navigate between buffers
+			"commands": ["workbench.action.navigateRight"],
+			"when": "explorerViewletVisible && filesExplorerFocus",
+			"silent": true
+		},
+		{
+			"before": ["<leader>", "r", "n"], // rename variable
+			"commands": ["editor.action.rename"],
+			"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly",
+			"silent": true
+		}
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<leader>", "/"], // comment line
+			"after": ["g", "c"]
+		},
+		{
+			"before": ["<M-j>"], // move lines
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["K"], // move lines
+			"commands": ["editor.action.moveLinesUpAction"]
+		},
+		{
+			"before": ["tab"], // tab line
+			"commands": ["editor.action.indentLines"],
+			"when": "editorTextFocus && !editorReadonly"
+		},
+		{
+			"before": ["shift+tab"], // out tab line
+			"commands": ["editor.action.outdentLines"],
+			"when": "editorTextFocus && !editorReadonly"
+		}
+	],
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false
+	},
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"[go]": {
+		"editor.defaultFormatter": "golang.go"
+	},
+	"files.autoSave": "afterDelay"
+}
