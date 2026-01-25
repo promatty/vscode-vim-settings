@@ -13,8 +13,8 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
 	"editor.bracketPairColorization.enabled": true,
-	"editor.guides.bracketPairs": "active",
-	"diffEditor.ignoreTrimWhitespace": false,
+  "editor.guides.bracketPairs": "active",
+  "diffEditor.ignoreTrimWhitespace": false,
 	"git.enableSmartCommit": true,
 	"editor.tabSize": 2,
 	"editor.detectIndentation": false,
@@ -116,7 +116,10 @@
 		"<C-a>": false,
 		"<C-f>": false,
 		"<C-c>": false,
-		"<C-v>": false
+		"<C-v>": false,
+    "<C-p>": false,
+    "<C-j>": false
+
 	},
 	"github.copilot.nextEditSuggestions.enabled": true,
 	"[go]": {
